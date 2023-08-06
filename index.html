@@ -16,20 +16,27 @@
             <nav>
                <h1> Vykunth Premnath</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
                 <i class="fas fa-bars"></i>
             </nav>
-            <div class="header-text" style="margin-top: 700px;">
+            <div class="header-text">
                 <p id="typewriter-text">Software Developer</p>
                 <h1>Hi, I'm <span>Vykunth</span><br>from Buffalo, United States</h1>
             </div>
         </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <div class="arrow">
+                    
+                </div>
+            </a>
+        </div>
+        
     </div>
     <!-- ----------ABOUT---------- -->
     <div id="about">
@@ -40,7 +47,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p><img src="images\ind.png"> &nbsp; <img src="images/usa.png"></p>
+                    <p style="text-align: justify;"><img src="images/ind.png"> &nbsp; <img src="images/usa.png"></p>
                     <p>I'm Vykunth, a self-proclaimed tech aficionado on a lifelong quest to conquer the digital realm. From the very moment I laid eyes on a computer, I knew it was going to be a lifelong love affair. I mean, seriously, who wouldn't be smitten by the endless possibilities of that sleek machine?
                         In 7th grade, I delved into the enchanting world of Linux, quickly becoming a wizard at unraveling its secrets. I even managed to install Mac OS on a non-darwin system with a mischievous grin on my face.
                         I pursued Information Technology as my undergraduate major at Anna University,India where I devoured Python tutorials, attended workshops, and undertook various projects to deepen my knowledge in this realm.
@@ -223,14 +230,15 @@
             document.getElementById(tabName).classList.add('active-tab');
         }
 
-        // JavaScript for handling the mobile navigation menu
-        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
 
-        document.querySelector('.fas.fa-times').addEventListener('click', function () {
-            document.querySelector('nav ul').classList.remove('show');
-        });
+    document.querySelector('.fa-times').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.remove('show');
+    });
+
+
 
 
             const typewriterText = document.getElementById("typewriter-text");
@@ -259,6 +267,8 @@
             }
 
             typewrite(); // Start the typewriting effect
+
+
         </script>
 
 </body>

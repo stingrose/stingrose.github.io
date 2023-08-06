@@ -19,8 +19,8 @@ body {
 
 #header {
     width: 100%;
-    height: auto;
-    background-image: url(images/mobile-background.png);
+    height: 100vh;
+    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -384,76 +384,75 @@ nav .fas {
     display: none;
 }
 
-/* ----------CSS FOR SMALL SCREEN---------- */
-@media only screen and (max-width: 600px) {
-    #header {
-        background-image: url(images/user.png);
-    }
-
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #b54768;
-        position: fixed;
-        top: 0;
-        width: 200;
-        right: 0;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
+.header-text{
+    margin-top: 750px;
 }
 
+.scroll-down {
+    text-align: center;
+    margin-top: 120px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+    transition: transform 0.2s;
+}
+
+/* Add bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+/* Add hover effect */
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+
 /* ----------CSS FOR SMALL SCREEN---------- */
 @media only screen and (max-width: 600px) {
-
     /* Adjust the header image and text size for small screens */
     #header {
-        background-image: url(images/phone-background.png);
+        background-image: url(images/mob.png);
+        background-repeat: no-repeat; /* Prevent image from repeating */
     }
 
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    }
 
     .header-text h1 {
         font-size: 30px;
     }
 
     /* Show the navigation menu on small screens */
-    nav ul {
-        display: none;
-    }
-
     nav .fas {
         display: block;
         font-size: 25px;
     }
+    .header-text{
+        margin-top: 540px;
+    }
+
 
     nav ul {
-        background: #b54768;
+        background:rgba(68, 49, 55, 0.4);
         position: fixed;
         top: 0;
         width: 200px;
-        /* Increased the width to accommodate the menu items */
         right: 0;
         height: 100vh;
         padding-top: 50px;
@@ -464,11 +463,20 @@ nav .fas {
 
     nav ul.show {
         transform: translateX(0);
-        /* Show the menu when 'show' class is applied */
+        display: block; /* Add this line to make the menu visible */
+        transition: transform 0.3s ease-in-out;
     }
 
     nav ul li {
         display: block;
         margin: 25px;
+    }
+
+    .scroll-down {
+        text-align: center;
+        margin-top: 60px; /* Adjust as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
