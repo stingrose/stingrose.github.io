@@ -429,7 +429,7 @@ nav .fas {
 @media only screen and (max-width: 600px) {
     /* Adjust the header image and text size for small screens */
     #header {
-        background-image: url(images/background.png);
+        background-image: url(images/mob.png);
         background-repeat: no-repeat; /* Prevent image from repeating */
     }
 
