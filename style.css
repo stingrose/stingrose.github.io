@@ -559,54 +559,7 @@ nav .fas {
 
 
 /* ----------CSS FOR SMALL SCREEN---------- */
-@media only screen and (max-width: 480px) {
-    #qualifications {
-      display: none; /* Hide the qualifications section */
-    }
-    
-    /* Your existing styles for smaller screens */
-    #qualifications .milestone-header h2 { 
-      font-size: 2rem;
-      text-align: center;
-    }
-    
-    #qualifications .timeline-ico { 
-      height: 2.6rem;
-      width: 2.6rem;
-      line-height: 2.5rem;
-      left: 1.8rem;
-      margin-left: -2.4rem;
-      font-size: 1.0rem;
-      top: 1.0rem;
-      position: absolute;
-    }
-    
-    #qualifications .timeline-header {
-      padding-right: 2.5rem;
-      font-size: 1px;
-    }
-    
-    #qualifications .timeline-header h3,
-    #qualifications .timeline-header p {
-      font-size: 18px;
-      float: none;
-      width: auto;
-      padding-right: 0;
-      text-align: left;
-      margin-left: 2.5rem;
-    }
-    
-    #qualifications .timeline-content {
-      margin-left: 0;
-      padding-left: 0;
-    }
-    
-    #qualifications .timeline-content p {
-      font-size: 18px;
-      padding-right: 0;
-      margin-left: 9.5rem;
-    }
-  }
+
   
   
   
