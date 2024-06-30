@@ -632,10 +632,7 @@ nav .fas {
 
 
     /* Adjust the header image and text size for small screens */
-    #header {
-        background-image: url(images/mob.png);
-        background-repeat: no-repeat; /* Prevent image from repeating */
-    }
+
 
 
     .header-text h1 {
